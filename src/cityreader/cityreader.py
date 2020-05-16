@@ -34,7 +34,7 @@ def cityreader(cities=[]):
       csv_reader = csv.reader(csv_file)
       next(csv_reader)    
       for row in csv_reader:
-        cities.append(City(row[0], row[3], row[4]))
+        cities.append(City(row[0], float(row[3]), float(row[4])))
         
     return cities
 
@@ -43,7 +43,9 @@ cityreader(cities)
 # Print the list of cities (name, lat, lon), 1 record per line.
 for c in cities:
     print(c)
-
+'''
+NOTE -- All but the last set of coordinates pass, for some reason
+'''
 # STRETCH GOAL!
 #
 # Allow the user to input two points, each specified by latitude and longitude.
