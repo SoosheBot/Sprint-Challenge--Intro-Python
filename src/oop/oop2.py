@@ -8,8 +8,8 @@ class GroundVehicle():
         self.num_wheels = num_wheels
 
     # TODO
-    # I changed the noise in the test, nyyyyoooooommmmm sounds way cooler.
-    def drive(self, sound="nyyyyoooooommmmm"):
+
+    def drive(self, sound="vroooom"):
         return f"{sound}"
 
 # Subclass Motorcycle from GroundVehicle.
